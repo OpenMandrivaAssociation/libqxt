@@ -22,8 +22,6 @@ Patch1:		libqxt-media-keys.patch
 # http://dev.libqxt.org/libqxt/issue/112/wrong-include-in-qxtnetworkh
 Patch2:		libqxt-header-fix.patch
 
-BuildRequires:	pkgconfig(avahi-compat-libdns_sd)
-BuildRequires:	pkgconfig(avahi-core)
 BuildRequires:	db-devel
 BuildRequires:	pkgconfig(xrandr)
 BuildRequires:	openssl-devel
@@ -45,8 +43,8 @@ utility classes to add functionality not readily available in the Qt toolkit.
 Summary:	Development files for %{name}
 Group:		Development/C++
 Requires:	%{name} = %{version}-%{release}
-Requires:	avahi-compat-libdns_sd-devel
-Requires:	avahi-devel
+BuildRequires:	pkgconfig(avahi-compat-libdns_sd)
+BuildRequires:	pkgconfig(avahi-core)
 Requires:	db-devel
 Requires:	qt4-devel
 
