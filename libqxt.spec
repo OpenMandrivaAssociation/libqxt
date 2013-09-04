@@ -42,7 +42,6 @@ utility classes to add functionality not readily available in the Qt toolkit.
 %package -n	%{devname}
 Summary:	Development files for %{name}
 Group:		Development/C++
-Requires:	%{name} = %{version}-%{release}
 BuildRequires:	pkgconfig(avahi-compat-libdns_sd)
 BuildRequires:	pkgconfig(avahi-core)
 Requires:	db-devel
