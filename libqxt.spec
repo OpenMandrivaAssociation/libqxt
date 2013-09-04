@@ -5,7 +5,7 @@
 
 Name:		libqxt
 Version:	0.6.2
-Release:	1
+Release:	2
 Summary:	Qt extension library
 Group:		System/Libraries
 License:	CPL or LGPLv2
@@ -42,6 +42,7 @@ utility classes to add functionality not readily available in the Qt toolkit.
 %package -n	%{devname}
 Summary:	Development files for %{name}
 Group:		Development/C++
+Provides:	%{name}-devel
 BuildRequires:	pkgconfig(avahi-compat-libdns_sd)
 BuildRequires:	pkgconfig(avahi-core)
 Requires:	db-devel
