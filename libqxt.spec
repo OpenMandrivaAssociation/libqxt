@@ -5,7 +5,7 @@
 
 Name:		libqxt
 Version:	0.6.2
-Release:	7
+Release:	8
 Summary:	Qt extension library
 Group:		System/Libraries
 License:	CPL or LGPLv2
