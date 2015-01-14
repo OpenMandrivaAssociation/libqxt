@@ -1,0 +1,11 @@
+--- libqxt-libqxt-v0.6.2/src/core/qxtslotjob.cpp.orig	2015-01-14 21:23:59.418833707 +0000
++++ libqxt-libqxt-v0.6.2/src/core/qxtslotjob.cpp	2015-01-14 21:24:05.847833234 +0000
+@@ -174,7 +174,7 @@
+ 
+ QVariant QxtFuture::delayedResult(int msec)
+ {
+-    if (!waiter->wait(msec, false))
++    if (!waiter->wait(msec))
+         return QVariant();
+     return job->result();
+ }

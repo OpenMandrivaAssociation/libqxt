@@ -21,6 +21,8 @@ Patch1:		libqxt-media-keys.patch
 # Fix wrong header includes RHBZ#733222
 # http://dev.libqxt.org/libqxt/issue/112/wrong-include-in-qxtnetworkh
 Patch2:		libqxt-header-fix.patch
+# fix incorrect api usage
+Patch3:		libqxt-compile.patch
 
 BuildRequires:	db-devel
 BuildRequires:	pkgconfig(xrandr)
@@ -55,9 +57,7 @@ that use LibQxt.
 
 %prep
 %setup -q -n %{name}-%{name}-v%{version}
-%patch0 -p1 -b .linking
-%patch1 -p1 -b .mediakeys
-%patch2 -p1 -b .includes
+%apply_patches
 
 # We don't want rpath
 sed -i '/RPATH/d' src/qxtlibs.pri
