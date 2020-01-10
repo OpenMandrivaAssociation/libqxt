@@ -57,7 +57,7 @@ that use LibQxt.
 
 %prep
 %setup -q -n %{name}-%{name}-v%{version}
-%apply_patches
+%autopatch -p1
 
 # We don't want rpath
 sed -i '/RPATH/d' src/qxtlibs.pri
