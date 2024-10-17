@@ -9,7 +9,7 @@ Release:	10
 Summary:	Qt extension library
 Group:		System/Libraries
 License:	CPL or LGPLv2
-URL:		http://www.libqxt.org/
+URL:		https://www.libqxt.org/
 Source0:	http://bitbucket.org/libqxt/libqxt/get/v%{version}.tar.bz2
 # Fix DSO linking
 Patch0:		libqxt-linking.patch
