@@ -24,6 +24,11 @@ Patch2:		libqxt-header-fix.patch
 # fix incorrect api usage
 Patch3:		libqxt-compile.patch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	db-devel
 BuildRequires:	pkgconfig(xrandr)
 BuildRequires:	openssl-devel
